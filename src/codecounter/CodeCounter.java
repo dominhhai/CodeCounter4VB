@@ -77,9 +77,9 @@ public class CodeCounter {
 	}
 	
 	private void printResult() {
-		System.out.println("¥------------------- "+ this.fileName +" -----------------¥");
+		System.out.println("ÂÂ¥------------------- "+ this.fileName +" -----------------ÂÂ¥");
 		this.code.print();
-		System.out.println("£------------------- "+ this.fileName +" -----------------£");
+		System.out.println("ÂÂ£------------------- "+ this.fileName +" -----------------ÂÂ£");
 	}
 	
 	private char getFirstCharacter(String line) {
@@ -134,13 +134,13 @@ public class CodeCounter {
 	public static void main(String[] args) {
 		CodeCounter codeCounter = new CodeCounter();
 		Code total = new Code();
-		final String path = "C:\\Users\\hai-4181\\Desktop\\SECIM-ELECO-copy\\ElecoCore\\LookUp";
+		final String path = "C:\\";
 		File folder = new File(path);
 		travel(folder, codeCounter, total);
 		
-		System.out.println("¥------------------- "+ path +" -----------------¥");
+		System.out.println("ÂÂ¥------------------- "+ path +" -----------------ÂÂ¥");
 		total.print();
-		System.out.println("£------------------- "+ path +" -----------------£");
+		System.out.println("ÂÂ£------------------- "+ path +" -----------------ÂÂ£");
 	}
 	
 	
