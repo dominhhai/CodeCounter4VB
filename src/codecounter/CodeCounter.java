@@ -77,9 +77,9 @@ public class CodeCounter {
 	}
 	
 	private void printResult() {
-		System.out.println("¥------------------- "+ this.fileName +" -----------------¥");
+		System.out.println("▼------------------- "+ this.fileName +" -----------------▼");
 		this.code.print();
-		System.out.println("£------------------- "+ this.fileName +" -----------------£");
+		System.out.println("▲------------------- "+ this.fileName +" -----------------▲");
 	}
 	
 	private char getFirstCharacter(String line) {
@@ -138,9 +138,9 @@ public class CodeCounter {
 		File folder = new File(path);
 		travel(folder, codeCounter, total);
 		
-		System.out.println("¥------------------- "+ path +" -----------------¥");
+		System.out.println("▼------------------- "+ path +" -----------------▼");
 		total.print();
-		System.out.println("£------------------- "+ path +" -----------------£");
+		System.out.println("▲------------------- "+ path +" -----------------▲");
 	}
 	
 	
